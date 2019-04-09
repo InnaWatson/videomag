@@ -1,0 +1,214 @@
+html, body {
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #ff1662;
+    padding: 1% 4%;
+    align-items: center!important;
+    height: 130px;
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+.menu-wrapper{
+    background-color: #312e2e;
+    border-top: 1px solid #ffffff;
+    padding: 0px 4%;
+    height: 70px;
+}
+.nav-link{
+    color: rgba(255,255,255,1);
+}
+.nav {display: -webkit-box;width:100%;-webkit-box-pack: justify;}
+input {
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    width: 100%;
+    height: 100%;
+    background-color: #606060;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0 30px;
+    border-bottom: 2px solid transparent;
+}
+.classy-navbar {
+    width: 100%;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+}
+form {
+    width: 280px;
+    height: 40px;
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    top: 0;
+    right: 10px;
+    font-size: 18px;
+    z-index: 99;
+    border: none;
+    cursor: pointer;
+    color: #ffffff!important;
+}
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: #e83e8c;;
+    outline: 0 none;
+}
+.main-wrapper{
+    background-color: #edf1f4;
+    padding: 5px;
+    display: flex;
+    flex: 0 0 50%;
+
+}
+.main-left-side{
+    background-image: url(images/bg-img/1.jpg);
+    visibility: visible;
+    animation-delay: 300ms;
+    animation-name: fadeInUp;
+    height: 500px;
+    margin: 5px;
+}
+.video-play-btn {
+    position: absolute;
+    display: block;
+    width: 96px;
+    height: 96px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 96px;
+    color: #ffffff;
+    font-size: 30px!important;
+}
+.video-play-btn > i{
+    color: #ffffff;
+    padding-left: 5px;
+}
+.video-play-btn:hover, .video-play-btn:focus{
+    background-color: #ff1662;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+a{
+    text-decoration: none;
+    outline: 0 solid transparent;
+    color: #ffffff;
+    display: flex;
+    line-height: 1;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+a:hover, a:focus {
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    color: #ff1662;
+}
+.no-padding{
+    padding: 0px;
+}
+/* ------------------   flex grid starts   ----------------*/
+.main-right-side{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-right-side > div {
+    height: 245px;
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+/* ------------------   flex grid ends   ----------------*/
+.main-right-side-top{
+    background-image: url(images/bg-img/2.jpg);
+    width: calc(100% - 5px)!important;
+}
+.main-right-side-bottom-left{
+    background-image: url(images/bg-img/3.jpg);
+}
+.main-right-side-bottom-right{
+    background-image: url(images/bg-img/4.jpg);
+}
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*---------------- content post for image -----------------*/
+.post-content {
+    position: absolute;
+    z-index: 100;
+    left: 50px;
+    bottom: 50px;
+    right: 50px;
+}
+.main-left-side::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    content: '';
+    z-index: 5;
+}
+.post-tag {
+    text-transform: uppercase;
+    font-size: 10px;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.post-title{
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.post-meta{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.post-meta > a {
+    font-size: 10px;
+}
+.post-meta > a > img{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
